@@ -26,14 +26,14 @@ function classlog(className){
 }
 
 
-///@classlog
+/// @classlog
 class Democlass {
-  constructor(...parameters) {
-    console.log("call from demo class",parameters)
+  constructor(p1,p2) {
+    console.log("call from demo class",p1,p2)
   }
 }
 
-let Myclass = new Democlass(2,3)
+/// const Myclass = new Democlass(2,3)
 
 @Component({
   selector: 'app-root',
