@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { DataBindingDemoComponent } from './data-binding-demo/data-binding-demo.component';
+import { NgFordemoComponent } from './ng-fordemo/ng-fordemo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
-    DataBindingDemoComponent
+    DataBindingDemoComponent,
+    NgFordemoComponent
   ],
   imports: [
     BrowserModule,
