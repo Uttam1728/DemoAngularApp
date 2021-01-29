@@ -1,4 +1,6 @@
+import { RecordsService } from './../records.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-ng-fordemo',
@@ -7,35 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgFordemoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _recordService: RecordsService) { 
 
-  data = [
-    {
-      Name : "Ushank",
-      isonline : true
-    },
-    {
-      Name : "Raj",
-      isonline : false
-    },
-    {
-      Name : "Ashish",
-      isonline : true
-    },
-    {
-      Name : "Ushank",
-      isonline : true
-    },
-    {
-      Name : "Raj",
-      isonline : false
-    },
-    {
-      Name : "Ashish",
-      isonline : true
-    }
-  ]
+  }
+
+  data = [];
+
   ngOnInit(): void {
+    this._recordService.getData()
+    .subscribe(record => this.data = record.obj)
   }
 
 }

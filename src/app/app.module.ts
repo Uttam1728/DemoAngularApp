@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { DataBindingDemoComponent } from './data-binding-demo/data-binding-demo.component';
 import { NgFordemoComponent } from './ng-fordemo/ng-fordemo.component';
+import { RecordsService } from './records.service'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -15,9 +17,11 @@ import { NgFordemoComponent } from './ng-fordemo/ng-fordemo.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+
   ],
-  providers: [],
+  providers: [RecordsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
