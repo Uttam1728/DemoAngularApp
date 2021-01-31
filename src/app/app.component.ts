@@ -45,7 +45,7 @@ class Democlass {
 export class AppComponent {
   title = 'DemoAngularApp';
 
-  constructor(a,b){
+  constructor(){
     console.log("call from constructor",this.aSimpleMethod(5,2))
   }
 

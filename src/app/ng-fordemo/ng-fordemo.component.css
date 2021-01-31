@@ -1,0 +1,18 @@
+.even{
+    background-color: brown;
+    color: aliceblue
+}
+
+.odd{
+    background-color: yellow;
+    color: black;
+}
+
+.first{
+    border: 2px solid black;
+    font-size:xx-large;
+}
+.last{
+    border: black;
+    font-size:xx-large;
+}
